@@ -123,3 +123,35 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-color: #f7faff; /* soft blue */
+  color: #333;
+}
+.hero {
+  display: flex;
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
+  min-height: 100vh;        /* full screen height */
+  padding: 2rem;
+  background: url('https://images.unsplash.com/photo-1581091012184-7fe0b6fd3366?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  text-align: left;       /* left-to-right flow */
+  color: white;
+}
+
