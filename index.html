@@ -2,39 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Science Organization for Young Innovative Students</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SOYIS — Ignite Curiosity</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
+
   <header>
-    <h1>Science Organization for Young Innovative Students</h1>
+    <div class="logo">SOYIS</div>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="blog.html">Blog</a>
-      <a href="#" id="discord-link">Discord</a>
+      <a href="#" onclick="goToDiscord()">Discord</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Ignite Curiosity. Fuel Innovation.</h2>
-    <p>Empowering the next generation of scientific minds.</p>
-    <button onclick="goToDiscord()">Join Our Discord</button>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Science is Our Playground</h1>
+      <p>Welcome to SOYIS – where young minds build the future.</p>
+      <button onclick="goToDiscord()">🚀 Join Our Discord</button>
+    </div>
   </section>
 
   <section class="features">
-    <div class="feature">
-      <h3>Learn & Explore</h3>
-      <p>Dive into our science resources and workshops.</p>
-    </div>
-    <div class="feature">
-      <h3>Community & Collaboration</h3>
-      <p>Join like-minded students and mentors.</p>
-    </div>
-    <div class="feature">
-      <h3>Latest Insights</h3>
-      <p>Check out our blog for updates and ideas.</p>
+    <h2 data-aos="fade-up">Explore the Awesome</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in">
+        <h3>🔬 Experiments</h3>
+        <p>Get hands-on with science challenges and fun labs.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>🤝 Collaborate</h3>
+        <p>Work with students and mentors on real projects.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>🧠 Think Big</h3>
+        <p>Innovate, invent, and share your ideas with the world.</p>
+      </div>
     </div>
   </section>
 
@@ -43,5 +52,8 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
